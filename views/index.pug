@@ -1,11 +1,31 @@
---2020-05-04 04:40:52--  https://raw.githubusercontent.com/0x000NULL/qsign/master/views/index.pug
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 199.232.64.133
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|199.232.64.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 1172 (1.1K) [text/plain]
-Saving to: ‘index.pug.1’
+extends layout
 
-     0K .                                                     100% 22.3M=0s
-
-2020-05-04 04:40:52 (22.3 MB/s) - ‘index.pug.1’ saved [1172/1172]
-
+block content
+  doctype html
+    head
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(name='author' content='danstyx & stripcheese')
+      meta(name='description' content="Didn't get to sign your pals & gals' yearbooks? Try qSign, FOREVER FREE!")          
+      meta(name='keywords' content='Yearbook, Quarantine, Signing')
+      link(rel='stylesheet' href='./stylesheets/default.css')
+      link(rel='icon' href='./Images/favicon.png' type='image')
+      title qSign - Create/Sign
+      #container
+        #main
+          nav
+            img.navlogo(src='./Images/logo.png' width='30%' height='10%')
+          h1 Welcome to qSign
+          h3 create easy, online yearbook signing pages for you &amp; your friends!
+          #menu
+            script(src='./Scripts/menu.js')
+      footer#footer
+        p Created by danstyx &amp; stripcheese - 2020
+        p
+          | Quick Links:
+          a(href='home.html') Home
+          |  -
+          a(href='discord.gg/something') Discord
+          |  -
+          a(href='faq.html') FAQ
+          |  -
+          a(href='https://colorhunt.co/palette/186981') Color Palette
