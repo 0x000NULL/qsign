@@ -1,0 +1,125 @@
+@font-face {
+	font-family: stroud;
+	src: url("./fonts/Stroud.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body { 
+	background-color: #533268;
+	height: 100%;
+}
+
+nav {
+	background-color: #331b44;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.navlogo {
+	padding: 10px 0px 10px 10px;
+}
+
+#container {
+	min-height: 100%;
+}
+
+#main {
+	overflow: auto;
+	padding-bottom: 45px;
+}
+
+#footer {
+	background-color: #331b44;
+	position: relative;
+	height: 45px;
+	margin-top: -45px;
+	clear: both;
+}
+
+#menu p {
+	font-family: stroud;
+	color: #e0dada;
+	font-size: 30px;
+	width: 100%;
+	margin: 30px 0px;
+	text-align: center;
+}
+
+#menu button {
+	font-family: stroud;
+	font-size: 50px;
+	color: #332f2f;
+	width: 100%;
+	border-radius: 4px;
+}
+
+#menu button:hover {
+	background-color: #CFCFCF;
+}
+
+#menu {
+	background-color: #331b44;
+	width: 200px;
+	margin: 0px auto;
+	padding: 100px;
+	border-radius: 15px;
+}
+
+.view {
+	background-color: #533268;
+	width: 70%;
+	height: 400px;
+	margin: 0px auto;
+	padding: 100px;
+	border-radius: 15px;
+	border: 25px solid #331b44;
+}
+
+h1 {
+	font-family: stroud;
+	font-size: 80px;
+	text-align: center;
+	color: #e0dada;
+	margin-top: 90px;
+	-webkit-text-stroke: 1px #332f2f;
+}
+
+h2 {
+	font-family: stroud;
+	font-size: 40px;
+	text-align: center;
+	color: #e0dada;
+	margin: 40px 0px;
+	-webkit-text-stroke: 1px #332f2f;
+}
+
+h3 {
+	font-family: stroud;
+	font-size: 40px;
+	text-align: center;
+	color: #e0dada;
+	margin-bottom: 40px;
+	-webkit-text-stroke: 1px #332f2f;
+}
+
+footer p {
+	font-family: stroud;
+	color: #e0dada;
+	margin-left: 5px;
+	padding-top: 3px;
+}
+
+footer a {
+	text-decoration: underline;
+	color: #474747;
+}
