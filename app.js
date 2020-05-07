@@ -15,9 +15,9 @@ var app = express();
 
 
 // Certificate
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz/chain.pem', 'utf8');
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz-0001/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz-0001/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz-0001/chain.pem', 'utf8');
 
 const credentials = {
     key: privateKey,
