@@ -14,6 +14,7 @@ var create = require('./routes/create');
 
 var app = express();
 
+/*
 // Certificate
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz/privkey.pem', 'utf8');
 const certificate = fs.readFileSync('/etc/letsencrypt/live/qsign.xyz/cert.pem', 'utf8');
@@ -24,7 +25,7 @@ const credentials = {
     cert: certificate,
     ca: ca
 };
-
+*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -62,12 +63,14 @@ module.exports = app;
 
 // Starting both http & https servers
 const httpServer = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
+//const httpsServer = https.createServer(credentials, app);
 
 httpServer.listen(80, () => {
     console.log('HTTP Server running on port 80');
 });
 
+/*
 httpsServer.listen(443, () => {
     console.log('HTTPS Server running on port 443');
 });
+*/

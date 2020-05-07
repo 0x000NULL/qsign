@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  #container
+    #main
+      nav
+        img.navlogo(src='./Images/logo.png' width='30%' height='10%')
+      h1= message
+      h2= error.status
+      pre #{error.stack}
