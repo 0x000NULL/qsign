@@ -1,5 +1,8 @@
 RewriteEngine on
 
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://qsign/.xyz/$1 [R,L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.pug -f
 RewriteRule ^(.*)$ $1.pug [NC,L]
