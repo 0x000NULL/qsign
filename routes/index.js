@@ -3,17 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'qSign | Home' });
-});
-
-/* GET create page. */
-router.get('/create', function(req, res, next) {
-    res.render('create', { title: 'qSign | create' });
+    res.render('home', { title: 'qSign | Home' });
 });
 
 /* GET faq page. */
 router.get('/faq', function(req, res, next) {
-    res.render('faq', { title: 'qSign | faq' });
+    res.render('faq', { title: 'qSign | FAQ' });
 });
 
 module.exports = router;
