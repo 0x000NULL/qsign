@@ -36,10 +36,12 @@ window.onload = function() {
 		var cSubmit = document.createElement('button');
 		cSubmit.innerHTML = "Submit";
 		
-		cSubmit.onclick = function() {
+		cSubmit.onclick = function(callback) {
 			var nameData = document.getElementById("nameInput");
 			var gradeData = document.getElementById("gradeInput");
-			return nameData + " " + gradeData;
+			callback(nameData);
+			callback(gradeData);
+			generate();
 		}
 		
 		createform.replaceChild(nameLabel, bCreate); // Removes all previous form choices.
@@ -182,4 +184,28 @@ function redo() {
 		createform.replaceChild(back, bSign);
 		createform.appendChild(sSubmit);
 	}
+}
+
+function generate() {
+	var name = nameData;
+	var grade = gradeData;
+	var randomNumber = Math.floor(Math.random() * (0 - 9 + 1)) + 0;
+	if(!fs.exists(randomNumber)){
+		fs.mkdir(randomNumber);
+		try {
+			await fs.copy('../Images/img', 'randomNumber');
+			console.log('success!');
+		} 	
+		catch (err) {
+			console.error(err);
+		}
+		return res.redirect
+		
+		var stream - fs.createWriteStream('my.js');
+		stream.once('open', (name, grade) => {
+			stream.write('var ybName = name;');
+			stream.write('var ybGrade = grade;');
+			stream.end();
+		}
+	}	
 }
