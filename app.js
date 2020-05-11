@@ -1,6 +1,6 @@
 const http = require('http');
 const https = require('https');
-const fse = require('fs-extra');
+const fs = require('fs-extra');
 
 var createError = require('http-errors');
 var express = require('express');
